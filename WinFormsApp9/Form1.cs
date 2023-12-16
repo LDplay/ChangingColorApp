@@ -20,7 +20,7 @@ namespace ChangingColorApp
         private void InitializeComponents()
         {
             clickButton = new Button();
-            clickButton.Text = "Нажми меня!";
+            clickButton.Text = "ГЌГ Г¦Г¬ГЁ Г¬ГҐГ­Гї!";
             clickButton.Size = new Size(100, 50);
             clickButton.Location = new Point((ClientSize.Width - clickButton.Width) / 2, (ClientSize.Height - clickButton.Height) / 2);
             clickButton.Click += ClickButton_Click;
@@ -72,7 +72,8 @@ namespace ChangingColorApp
                 maxAttemptRecord = clickCount;
             }
 
-            MessageBox.Show($"Количество кликов: {clickCount}\nМаксимальный рекорд по итогам всех попыток: {maxAttemptRecord}", "Игра завершена");
+            MessageBox.Show($"ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЄГ«ГЁГЄГ®Гў: {clickCount}\nГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г»Г© Г°ГҐГЄГ®Г°Г¤ ГЇГ® ГЁГІГ®ГЈГ Г¬ ГўГ±ГҐГµ ГЇГ®ГЇГ»ГІГ®ГЄ: {maxAttemptRecord}", "Г€ГЈГ°Г  Г§Г ГўГҐГ°ГёГҐГ­Г ");
             StartGame();
-    }
+        }
+    }    
 }
